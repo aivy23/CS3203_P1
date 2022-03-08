@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tweet Editing</title>
+    <!-- <style>
+        body{
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            back
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Tweet Editing by Aidan Ivy</h1>
+    <hr>
+    <h2>Tweets</h2>
+    <button id="shwBtn">List Tweets</button>
+    <table>
+        <thead>
+            <th>[Created at]</th>
+            <th>[Text]</th>
+        </thead>
+        <tbody id="tweets"></tbody>
+    </table>
+    <hr>
+    <h2>User IDs</h2>
+    <button id="shwIDs">List Users' IDs</button>
+    <table>
+        <tbody id="users"></tbody>
+    </table>
+    <hr>
+    <h2>Find Tweet</h2>
+    <form id="search-user">
+        <input type="text" id="id-input">
+        <button>Find Tweet by Tweet ID</button>
+    </form>
+    <table>
+        <tbody id="user-tweet"></tbody>
+    </table>
+    <hr>
+    <h2>Add Tweet</h2>
+    <form id="add-tweet">
+        <label for="tweet">Tweet something...</label>
+        <input type="text" name="tweet" id="tweet-text">
+        <label for="ID">ID</label>
+        <input type="text" name="ID" id="tweet-id">
+        <button>Add Tweet</button>
+    </form>
+    <hr>
+    <h2>Update Screen Name</h2>
+    <form id="update">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="user-name">
+        <label for="screen">ID</label>
+        <input type="text" name="screen" id="screen-name">
+        <button>Change Screen Name</button>
+    </form>
+    <hr>
+    <h2>Delete Tweet</h2>
+    <form id="delete-tweet">
+        <label for="del">Tweet ID</label>
+        <input type="text" name="del" id="tweet-del">
+        <button>Delete Tweet</button>
+    </form>
+    <table>
+        <tbody id="DELETE"></tbody>
+    </table>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
